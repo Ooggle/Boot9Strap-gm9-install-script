@@ -1,4 +1,4 @@
-![img script](https://i.imgur.com/d2mjLef.png) ![gm9](http://www.logic-sunrise.com/images/news/935768/in-3ds-godmode9-v121-disponible-1.png)
+![img script](https://i.imgur.com/d2mjLef.png)
 
 
 ## Boot9Strap-gm9-install-script
