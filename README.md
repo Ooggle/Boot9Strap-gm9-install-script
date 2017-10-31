@@ -1,4 +1,4 @@
-![img script](https://i.imgur.com/d2mjLef.png)
+![img script](https://i.imgur.com/9CEvhjy.png)
 
 
 ## Boot9Strap-gm9-install-script
