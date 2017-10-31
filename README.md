@@ -4,4 +4,4 @@ Boot9Strap-gm9-install-script est un simple script GodMode9 qui permet de hacker
 releases : [ici](https://github.com/Ooggle/Boot9Strap-gm9-install-script/releases)
 
 requiert seulement :
-- un accès au chain loader ou au boot.firm à la racine de la sd (avec NTRBootHax par exemple)
+- un accès au chainloader ou au boot.firm à la racine de la sd (avec NTRBootHax par exemple)
