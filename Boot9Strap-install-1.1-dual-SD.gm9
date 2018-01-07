@@ -1,0 +1,121 @@
+set PREVIEW_COLOR_ACTIVE 00FF00
+set PREVIEW_COLOR_COMMENT 888888
+set PREVIEW_COLOR_CODE DDDDDD
+set PREVIEW_MODE full
+#config preview
+
+#install-b9s-ooggle
+#created : 31/10/17
+#creator : Ooggle
+
+#intro
+set ERRORMSG "interrompu par l'utilisateur"
+ask "type de 3ds : $[ONTYPE]\nhack actuel : $[HAX]\nce script va installer : sighax\nvoulez vous continuer ?"
+set ERRORMSG ""
+echo "appuyer sur un bouton pour\nverifier les fichiers.."
+set PREVIEW_COLOR_COMMENT 441111
+set PREVIEW_COLOR_CODE 441111
+set PREVIEW_COLOR_ACTIVE FF0000
+
+#check files
+#tout les fichiers sont stockes dans 0:/install-b9s-full/
+set FULL 0:/ainstall-b9s-full
+set ERRORMSG "dossier '3ds' introuvable !"
+find $[FULL]/3ds NULL
+set ERRORMSG "dossier '3ds/FBI' introuvable !"
+find $[FULL]/3ds/FBI NULL
+set ERRORMSG "dossier 'boot9strap' introuvable !"
+find $[FULL]/boot9strap NULL
+set ERRORMSG "dossier 'cias' introuvable !"
+find $[FULL]/cias NULL
+set ERRORMSG "il manque un/des cias dans /cias"
+find $[FULL]/cias/Anemone3DS.cia NULL
+find $[FULL]/cias/Checkpoint.cia NULL
+find $[FULL]/cias/DSP1.cia NULL
+find $[FULL]/cias/FBI.cia NULL
+find $[FULL]/cias/hblauncher_loader.cia NULL
+find $[FULL]/cias/lumaupdater.cia NULL
+find $[FULL]/cias/freeShop.cia NULL
+set ERRORMSG "dossier 'gm9' introuvable !"
+find $[FULL]/gm9 NULL
+set ERRORMSG "dossier 'luma' introuvable !"
+find $[FULL]/luma NULL
+set ERRORMSG "fichier 'boot.3dsx' introuvable !"
+find $[FULL]/boot.3dsx NULL
+set ERRORMSG "fichier 'boot.firm' introuvable !"
+find $[FULL]/boot.firm NULL
+set ERRORMSG "fichier 'boot9strap.firm' corrompu !"
+sha $[FULL]/boot9strap/boot9strap.firm $[FULL]/boot9strap/boot9strap.firm.sha
+set PREVIEW_COLOR_ACTIVE 00FF00
+set PREVIEW_COLOR_COMMENT 888888
+set PREVIEW_COLOR_CODE DDDDDD
+set ERRORMSG ""
+echo "fichiers : ok"
+set ERRORMSG "interrompu par l'utilisateur"
+set PREVIEW_COLOR_ACTIVE FF0000
+set PREVIEW_COLOR_COMMENT FF0000
+set PREVIEW_COLOR_CODE FF0000
+ask "les actions qui suivent sont irreversibles.\ncontinuer ?"
+set PREVIEW_COLOR_ACTIVE 00FF00
+set PREVIEW_COLOR_COMMENT 888888
+set PREVIEW_COLOR_CODE DDDDDD
+
+#copie des fichiers dans la ctr nand
+set ERRORMSG "permissions non debloques !"
+echo "permissions necessaires !"
+allow -a 1:/
+allow -a S:/firm0.bin
+set ERRORMSG ""
+set CTRT 1:/ainstall-b9s-full
+cp -w -n $[FULL] $[CTRT]
+
+#changement de sd
+set PREVIEW_COLOR_ACTIVE FF0000
+set PREVIEW_COLOR_COMMENT FF0000
+set PREVIEW_COLOR_CODE FF0000
+switchsd "inserer la carte sd\nde le console"
+set PREVIEW_COLOR_ACTIVE 00FF00
+set PREVIEW_COLOR_COMMENT 888888
+set PREVIEW_COLOR_CODE DDDDDD
+
+#deplacement des fichiers dans la sd
+mv -w -n $[CTRT]/3ds 0:/3ds
+mv -w -n $[CTRT]/boot9strap 0:/boot9strap
+mv -w -n $[CTRT]/cias 0:/cias
+mv -w -n $[CTRT]/ctr 0:/ctr
+mv -w -n $[CTRT]/gm9 0:/gm9
+mv -w -n $[CTRT]/luma 0:/luma
+mv -w -n $[CTRT]/Splashes 0:/Splashes
+mv -w -n $[CTRT]/boot.3dsx 0:/boot.3dsx
+mv -w -n $[CTRT]/boot.firm 0:/boot.firm
+mkdir 0:/Themes
+cp 0:/ctr/Themes.here 0:/Themes/Themes.here
+rm $[CTRT]
+
+#backup des fichiers importants
+mkdir 0:/files9
+findnot 0:/files9/NAND?.bin TEMP
+cp -w -o -s S:/nand.bin $[TEMP]
+cp -w -n S:/firm0.bin 0:/files9/firm0.bin
+cp -w -n S:/firm1.bin 0:/files9/firm1.bin
+cp -w -n 1:/dbs/ticket.db 0:/files9/ticket.db
+echo "les backups des fichiers suivant ont\nete effectue :\n$[TEMP]\n0:/files9/firm0.bin\n0:/files9/firm1.bin\n0:/files9/ticket.db"
+echo "tout est en place :)\nle hack va commencer."
+
+#reverification de boot9strap.bin
+sha 0:/boot9strap/boot9strap.firm 0:/boot9strap/boot9strap.firm.sha
+cp -w -n 0:/boot9strap/boot9strap.firm S:/firm0.bin
+cp -w -n 0:/boot9strap/boot9strap.firm S:/firm1.bin
+
+#config de la ctr nand
+set CTRSD 0:/ctr
+cp -w -n 0:/boot.firm 1:/boot.firm
+cp -w -n $[CTRSD]/luma 1:/rw/luma
+
+#nettoyage
+rm $[CTRSD]
+rm 0:/boot9strap
+
+set PREVIEW_MODE off
+echo "bienvenue dans l'experience Luma3ds :)"
+reboot
