@@ -1,7 +1,7 @@
 [![img release](https://img.shields.io/github/release-date/Ooggle/Boot9Strap-gm9-install-script.svg?sanitize=true&color=blue)](#)
 [![img last commit](https://img.shields.io/github/last-commit/Ooggle/Boot9Strap-gm9-install-script.svg)](#)
 [![img last release](https://img.shields.io/github/release/Ooggle/Boot9Strap-gm9-install-script.svg?color=red)](#)
-[![img last release](https://img.shields.io/twitter/follow/Ooggule.svg?style=social)](https://twitter.com/Ooggule){:target="_blank"}
+[![img last release](https://img.shields.io/twitter/follow/Ooggule.svg?style=social)](https://twitter.com/Ooggule)
 
 ![img script](https://i.imgur.com/LnI1X0J.png)
 
