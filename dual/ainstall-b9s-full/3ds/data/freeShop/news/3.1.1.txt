@@ -1,0 +1,63 @@
+The scrolled update.
+
+------------------------
+|   DISCLAIMER   |
+------------------------
+Maybe you know that already, but my
+laptop's HDD died recently, I'm unable
+to work on freeShop correctly, the
+updates may be delayed until I replace
+the disk.
+	- arc13
+
+--------------------------
+|   CHANGELOG   |
+--------------------------
+
+• Further improvements to overall system
+  stability and other minor adjustments.
+• You can now scroll the game description
+  with the touchscreen!
+• The Y button will ask you if you want
+  to cancel the sleep download if the
+  selected game is already in sleep
+  download mode.
+• Storage meters now show
+  free space/total space
+• Updated Timmy (1.1):
+  Theme makers should update their
+  themes, a new guide has been released
+  with the changelog.
+• Korean flag has been added.
+• Added the option to use the system
+  keyboard for game searching.
+• Added an option to show the battery
+  percentage.
+• A game counter has been implemented.
+  You can disable it via the Settings >
+  Other tab.
+• Return to the HOME Menu while a
+  sleep download is processed should
+  be less harm.
+• Fixed bug that prevented DSiWare
+  games name to appear in sleep
+  mode download.
+• Fixed bug with the shutdown feature
+  that wasn't working properly with
+  New 3DS.
+• Updated Brazilian Portuguese,
+  Hungarian, Spanish US,
+  Spanish ES and Dutch
+  translations.
+• The moon icon for sleep download
+  don't freeze the console anymore.
+• Fixed bug that was crashing the app
+  when the user wanted to launch a game
+  through the freeShop/refresh the cache
+• Fixed the bug that was preventing
+  HOME Menu Themes to be downloaded.
+• Fixed the bug that was preventing
+  freeShop to launch games on cartridges.
+  
+Hey, Listen!
+	- Someone you hate

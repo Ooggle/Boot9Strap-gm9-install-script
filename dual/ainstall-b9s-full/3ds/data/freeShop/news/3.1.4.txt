@@ -1,0 +1,66 @@
+3.1.4 changelog:
+• Bugfix: freeShop was not installing
+  the seed correctly.
+
+3.1.3 changelog:
+The WOW-Too-Many-Informations update
+
+• Further improvements to overall system
+  stability and other minor adjustments.
+• Reworked game description screen.
+  You can also press the Select button
+  to open the ratings screen for a game.
+• The installed list can now be sorted
+  and the sorting options can be saved,
+  like the filter list.
+  (Check settings)
+• The game list can now be filtered by
+  game features and publishers
+• Empty filters are now hidden
+• Reworked News screen (now like the
+  dialogs)
+• Title keys can be downloaded from
+  multiple URLs
+• A search bar has been added in the
+  installed list.
+• Check if free space is enough on
+  SD/NAND for sleep downloads.
+• Message if storage is almost full
+  in storage bars.
+• Modified dialogs/news screen, and
+  cleaned animations.
+• The "Refresh Cache"/"Update" 
+  buttons now asks for a confirmation
+  before rebooting the app.
+• The storage informations now tell you
+  if there's less than 5% of free storage
+  in your SD/NAND.
+• A notification is sent when the console
+  is disconnected from the internet.
+• The system settings can be launched when
+  there is no internet connection at
+  startup.
+• The game list is not updated on a search
+  when the search term didn't change.
+• Modified dialogs, and cleaned
+  animations.
+• Added a 3DSX auto-updater.
+• Press and hold Select to sleep-download
+  every downloadable content.
+• Bugfix + improved the notifications (on
+  the news list)
+• Bugfix: Start button wasn't closing the
+  app properly.
+• Bugfix: Unreleased DLC now fails the
+  download instead of suspend it, so the
+  download queue can continue.
+• Bugfix: RGB LED is now supported in
+  3DSX version.
+• Bugfix: Games with top/bottom
+  screenshot was crashing freeShop
+  (like MH4U)
+• Bugfix: Games with small screenshots
+  wasn't taking the full screen when
+  selected. (see Paper Plane EUR,
+  these screenshots are rescaled, so
+  it's very pixeled when in full screen)

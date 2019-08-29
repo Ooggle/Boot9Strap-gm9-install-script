@@ -1,0 +1,13 @@
+• Further improvements to overall system
+  stability and other minor adjustments.
+• Fix bug with download queue duplicating.
+• Enable parental controls for title.
+• Add eShop music playback and music
+  settings. Place audio files in
+  /3ds/data/freeShop/music/
+• If you haven't done so already, run
+  DspDump to get proper audio support.
+• Supported music formats:
+    - BCSTM (DSP ADPCM)
+    - OGG (Vorbis)
+    - AAC

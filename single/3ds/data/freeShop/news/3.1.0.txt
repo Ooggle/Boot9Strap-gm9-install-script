@@ -1,0 +1,38 @@
+The hyped update.
+
+• Further improvements to overall system
+  stability and other minor adjustments.
+• Sleep download feature:
+  - Press Y on any game that you want to
+    sleep-download
+  - You can also press on the little moon
+    icon on the app description screen
+• QWERTZ, Katakana keyboards implemented +
+  Search by Title ID
+• Brand new Theme-Engine™ (named Timmy)
+  For theme makers: Please read the guide
+  uploaded on the GBATemp thread
+• Storage informations are now on the
+  bottom  screen + Status bar on the
+  bottom screen
+• PabloMK7's Awesome Boot Screen
+• Game size on the installed game list
+• You can show the Title ID of a game
+  on the game description screen
+  (Settings > Others > "Show Title ID in 
+   game description screen")
+• For New 3DS:
+  - C-Stick, used to change between bottom
+    screen tabs
+  - ZL & ZR, used to go to the first and last
+    games on the game list
+• CPad will no longer scroll game list when
+  used to scroll a game description
+• The Audio Service status is shown on
+  Settings > Music tab
+• GBA has been added to the platform filter
+  list
+• Download/Storage progress bars are now
+  animated on progress
+
+Des chiens sur des bananes !

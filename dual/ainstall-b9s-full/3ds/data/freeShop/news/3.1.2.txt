@@ -1,0 +1,55 @@
+The colorful update.
+
+• Further improvements to overall system
+  stability and other minor adjustments.
+• EXPERIMENTAL: The MP3 files are now
+		supported for the BGM.
+  (Thanks to @MaK11-12 and his ctrmus)
+• Added Notifiers, with support
+  for the 3DS's RGB LED (thanks to @Sono)
+  and the Notification applet.
+• Updated Timmy (1.2):
+  Theme makers should update their
+  themes, a new guide has been released
+  with the changelog.
+• Support for the Sapphire sysmodule,
+  which extends the functionnality of
+  the Notifiers with sleep mode downloads,
+  it will blink the LED when a sleep mode
+  download is finished. (Thanks to @Sono
+  again, download links on the GBAtemp
+  thread, a system firmware >= 11.0 is
+  required.)
+• Improved Sleep/Inactivity mode:
+  - You can now choose which screen
+    you want to turn off after a
+    certain amount of inactivity.
+  - You can also choose to dim the Power
+    and WiFi LEDs.
+  - You can also choose after how many
+    seconds the freeShop will go into
+    sleep mode.
+• Added the possibility to reset the
+  eShop music (to grab the most recent
+  one).
+• The music will now stop if the volume
+  slider is too low (this can be disabled
+  in the Music settings).
+• You can now press the A button on the 
+  loading screen to enable WiFi.
+• A notification is sent if the battery
+  level is low.
+• Added percentage on loading screen
+  for the "Loading game list" part
+• The app can now be closed via the
+  Start button (no longer the Select)
+  to let users open Rosalina while they
+  are in the app.
+• The dialogs has been reworked.
+• Bugfix: The Informations icon is now
+  selected by default on freeShop boot
+• Bugfix: The system app DLC & Updates
+  are now installable without problems
+• Bugfix: If you quit the app while
+  the Game list is loading, it should
+  not crash anymore.
